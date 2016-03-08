@@ -2,6 +2,7 @@
 Скрипт спауна юнита относительно координат/объекта (3 юнита в разных координатах).
 Скрипт исполняется в ините любого юнита/объекта.
 */
+
 if (!isDedicated) then {
 	private [_spawncenter1, _posx1, _posx2, _posx3, _posy1, _posy2, _posy3, _posz, _position1, _position2, _position3, _endpos1, _endpos2, _endpos3];
 		_spawncenter1 = getPosASL sp1	// получаем координаты объекта (нулевые координаты для спауна)
