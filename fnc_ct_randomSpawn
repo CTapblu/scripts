@@ -16,6 +16,7 @@
 
 fnc_ct_randomSpawn = {
 	private ["_unit","_marker","_rx","_ry","_cx","_cy","_safepos"];
+	
 	_unit = _this select 0;
 	_marker = _this select 1;
 	_rx = _this select 2;
