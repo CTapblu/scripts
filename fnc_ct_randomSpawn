@@ -30,7 +30,7 @@ fnc_ct_randomSpawn = {
 	{
 		_safepos = [[_cx,_cy,0],1,10,1,0,10,0] call BIS_fnc_findSafePos;
 		_x setPos _safepos;
-	}foreach units group _unit;
+	} foreach units group _unit;
 };
 
 [u1,"randomSpawn",100,100] call fnc_ct_randomSpawn;							// телепортируем юнит "u1" относительно маркера "randomSpawn"
