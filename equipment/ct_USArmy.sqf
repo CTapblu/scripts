@@ -137,7 +137,7 @@ case "AG_MS": {			// x4 Помощник наводчика
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
 	addWeapons ["ACE_M4A1_Aim_F","ACE_Rucksack_MOLLE_ACU","M9"];
-	addItems ["R","N","M","G"];
+	addItems ["R","N","M"];
 };
 
 	// x2 "DVR"
@@ -153,9 +153,17 @@ case "SR_TRAUMA_SPC": {	// Командир санитарного отделе�
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
 	addWeapons ["ACE_M4A1_Aim_F","ACE_Rucksack_MOLLE_ACU_Medic","M9"];
-	addItems ["R","N","M","G"];
+	addItems ["R","B","N","D","M","MT","G"];
 };
 case "TRAUMA_SPC": {	// Санинструктор
+	addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+	addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+	addMagazines("SmokeShellGreen",2);
+	addMagazines("SmokeShellRed",2);
+	addMagazines("ACE_Medkit",1);
+	addMagazines("15Rnd_9x19_M9",2);
+	addWeapons ["ACE_M4A1_Aim_F","ACE_Rucksack_MOLLE_ACU_Medic","M9"];
+	addItems ["R","N","M","G"];
 };
 
 	// x1 "DVR"
@@ -165,6 +173,7 @@ case "TRAUMA_SPC": {	// Санинструктор
 case "SNIPER_XM107": {	// Снайпер М107
 	addMagazines("10Rnd_127x99_m107",6);
 	addMagazines("SmokeShell",2);
+	addMagazines("HandGrenade_West",2);
 	addMagazines("ACE_Battery_Rangefinder",1);
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
@@ -175,6 +184,7 @@ case "SNIPER_M24": {	// Снайпер М24
 	addMagazines("5Rnd_762x51_M24",4);
 	addMagazines("ACE_5Rnd_762x51_T_M24",2);
 	addMagazines("SmokeShell",2);
+	addMagazines("HandGrenade_West",2);
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
 	addWeapons ["M24_des_EP1","M9","ACE_SpottingScope","ACE_MX2A","ACE_Rucksack_MOLLE_ACU"];
@@ -185,10 +195,11 @@ case "SNUPER_M203": {	// Снайпер М203
 	addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
 	addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
 	addMagazines("SmokeShell",2);
+	addMagazines("HandGrenade_West",2);
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
 	addMagazines("ACE_1Rnd_HE_M203",4);
-	addWeapons ["ACE_M4A1_GL","M9"];
+	addWeapons ["ACE_M4A1_GL","ACE_Rucksack_MOLLE_ACU","M9"];
 	addItems ["R","N","M","G"];
 	_unit setVariable ["ACE_RuckMagContents",[["ACE_30Rnd_556x45_S_Stanag",2],["ACE_30Rnd_556x45_T_Stanag",2],["ACE_1Rnd_HE_M203",8],["1Rnd_SmokeGreen_M203",4],["1Rnd_SmokeRed_M203",4],["1Rnd_SmokeYellow_M203",4]]];
 };
@@ -196,10 +207,31 @@ case "SNUPER_M203": {	// Снайпер М203
 // Fire support team
 
 case "FSO": {			// Командир экипажа (специалист)
+	addMagazines("ACE_30Rnd_556x45_S_Stanag",3);
+	addMagazines("ACE_30Rnd_556x45_T_Stanag",1);
+	addMagazines("SmokeShell",2);
+	addMagazines("ACE_Medkit",1);
+	addMagazines("15Rnd_9x19_M9",2);
+	addWeapons ["ACE_M4A1_F","M9"];
+	addItems ["R","B","N","D","M","MT","G"];
 };
 case "FS_NCO": {		// Механик-водитель (специалист)
+	addMagazines("ACE_30Rnd_556x45_S_Stanag",3);
+	addMagazines("ACE_30Rnd_556x45_T_Stanag",1);
+	addMagazines("SmokeShell",2);
+	addMagazines("ACE_Medkit",1);
+	addMagazines("15Rnd_9x19_M9",2);
+	addWeapons ["ACE_M4A1_F","M9"];
+	addItems ["R","N","M"];
 };
 case "FS_SPC": {		// Мезаник-наводчик (специалист)
+	addMagazines("ACE_30Rnd_556x45_S_Stanag",3);
+	addMagazines("ACE_30Rnd_556x45_T_Stanag",1);
+	addMagazines("SmokeShell",2);
+	addMagazines("ACE_Medkit",1);
+	addMagazines("15Rnd_9x19_M9",2);
+	addWeapons ["ACE_M4A1_F","M9"];
+	addItems ["R","N","M"];
 };
 
 /*
@@ -209,10 +241,33 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 	// Platoon HQ
 	
 	case "PLT_LDR": {	// Командир взвода
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_ACOG","M9"];
+		addItems ["R","B","N","D","M","MT","G"];
 	};
 	case "CO_MED": {	// Взводный санинструктор
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShellGreen",2);
+		addMagazines("SmokeShellRed",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_Aim_F","ACE_Rucksack_MOLLE_ACU_Medic","M9"];
+		addItems ["R","N","M","G"];
 	};
 	case "FO": {		// Офицер
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_ACOG","M9"];
+		addItems ["R","B","N","G","M"];
 	};
 	
 		// x1 "PSG"
@@ -222,16 +277,67 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 	// Rifle squad
 	
 	case "SQD_LDR": {	// Командир отделения
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_ACOG","ACE_PRC119_ACU","M9"];
+		addItems ["R","B","N","D","M","MT","G"];
 	};
 	case "TM_LDR": {	// x2 Команлир огневой группы
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_ACOG","M9"];
+		addItems ["R","B","N","M","G"];
 	};
 	case "GREN": {		// x2 Гранатометчик
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_1Rnd_HE_M203",4);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_GL","ACE_Rucksack_MOLLE_ACU","M9"];
+		addItems ["R","N","M"];
+		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_SmokeYellow_M203",4],["1Rnd_SmokeGreen_M203",4],["1Rnd_SmokeRed_M203",4],["1Rnd_Smoke_M203",4],["ACE_1Rnd_HE_M203",8]]];
 	};
 	case "AR": {		// x2 Пулеметчик
+		addMagazines("200Rnd_556x45_M249",2);
+		addMagazines("ACE_200Rnd_556x45_T_M249",1);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["M249_EP1","M9"];
+		addItems ["R","N","M"];
 	};
 	case "RMAT": {		// ПТ специалист
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("Javelin",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_F","M9","Javelin",];
+		addItems ["R","N","M"];
 	};
 	case "DM": {		// Меткий стрелок
+		addMagazines("ACE_20Rnd_762x51_S_M110",4);
+		addMagazines("ACE_20Rnd_762x51_T_M110",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M110","M9"];
+		addItems ["R","N","M"];
 	};
 	
 		// x2 "DVR"
