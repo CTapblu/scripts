@@ -390,7 +390,7 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 	Дополнительные юниты
 */
 
-	case "ADD_1": {		// Pilot
+	case "ADD_1": {		// Пилот
 		addMagazines("ACE_30Rnd_556x45_S_Stanag",2);
 		addMagazines("ACE_30Rnd_556x45_T_Stanag",6);
 		addMagazines("HandGrenade_West",2);
@@ -399,7 +399,16 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 		addWeapons ["ACE_M4A1_F","ACE_ParachuteRoundPack"];
 		addItems ["R","N","M","G"];
 	};
-	case "ADD_2": {		// SIGINT Operator
+	case "ADD_2": {		// Оператор SIGINT (радилэлектронная разведка)
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",3);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",1);
+		addMagazines("SmokeShell",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_F","M9","ACE_PRC119_ACU"];
+		addItems ["R","N","M","G"];
+	};
+	case "ADD_3": {		// Агент ЦРУ
 		addMagazines("ACE_30Rnd_556x45_S_Stanag",3);
 		addMagazines("ACE_30Rnd_556x45_T_Stanag",1);
 		addMagazines("SmokeShell",2);
