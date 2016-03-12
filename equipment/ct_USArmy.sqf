@@ -316,7 +316,7 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 		addMagazines("ACE_Medkit",1);
 		addMagazines("15Rnd_9x19_M9",2);
 		addWeapons ["M249_EP1","M9"];
-		addItems ["R","N","M"];
+		addItems ["R","N","M","E"];
 	};
 	case "RMAT": {		// ПТ специалист
 		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
@@ -346,12 +346,44 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 	// Weapons squad
 	
 	case "SL": {		// Командир отделения
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_ACOG","ACE_PRC119_ACU","M9"];
+		addItems ["R","B","N","D","M","MT","G","E"];
 	};
 	case "MG": {		// x2 Пулеметчик М240
+		addMagazines("100Rnd_762x51_M240",4);
+		addMagazines("SmokeShell",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M240L_M145","M9"];
+		addItems ["R","N","M","E"];
 	};
 	case "AG": {		// x2 Помощник пулеметчика
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",2);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",6);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_F","M9","ACE_Rucksack_MOLLE_ACU"];
+		addItems ["R","N","M","E","B"];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2],["ACE_30Rnd_556x45_T_Stanag",4]]];
 	};
 	case "AB": {		// x2 ПОдносчик боеприпасов
+		addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
+		addMagazines("ACE_30Rnd_556x45_T_Stanag",2);
+		addMagazines("SmokeShell",2);
+		addMagazines("HandGrenade_West",2);
+		addMagazines("ACE_Medkit",1);
+		addMagazines("15Rnd_9x19_M9",2);
+		addWeapons ["ACE_M4A1_F","M9","ACE_Rucksack_MOLLE_ACU"];
+		addItems ["R","N","M","E"];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]]];
 	};
 		
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
