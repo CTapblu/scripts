@@ -326,7 +326,7 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 		addMagazines("Javelin",2);
 		addMagazines("ACE_Medkit",1);
 		addMagazines("15Rnd_9x19_M9",2);
-		addWeapons ["ACE_M4A1_F","M9","Javelin",];
+		addWeapons ["ACE_M4A1_F","M9","Javelin"];
 		addItems ["R","N","M"];
 	};
 	case "DM": {		// Меткий стрелок
