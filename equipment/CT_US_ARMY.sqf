@@ -41,7 +41,7 @@ case "RATELO": {		// x2 Радиотелефонист
 	addMagazines("ACE_Medkit",1);
 	addMagazines("15Rnd_9x19_M9",2);
 	addWeapons ["ACE_M4A1_Aim_F","ACE_PRC119_ACU","M9"];
-	addItems ["R","B","N","M","MT","G"];
+	addItems ["R","B","N","M"];
 };
 case "XO": {			// Старший помощник командира
 	addMagazines("ACE_30Rnd_556x45_S_Stanag",4);
