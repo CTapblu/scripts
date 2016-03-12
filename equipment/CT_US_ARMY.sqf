@@ -340,8 +340,8 @@ case "FS_SPC": {		// Мезаник-наводчик (специалист)
 		addItems ["R","N","M"];
 	};
 	
-		// x2 "DVR"
-		// x2 "VC"
+		// x1 "DVR"
+		// x1 "VC"
 	
 	// Weapons squad
 	
