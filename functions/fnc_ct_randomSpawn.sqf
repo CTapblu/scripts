@@ -25,10 +25,8 @@ fnc_ct_randomSpawn = {
 		_rx = _this select 2;
 		_ry = _this select 3;
 		
-		_cx = getMarkerPos _marker select 0;
-		_cy = getMarkerPos _marker select 1;
-		_cx = _cx + round(random _rx);
-		_cy = _cy + round(random _ry);
+		_cx = (getMarkerPos _marker select 0) + round(random _rx);
+		_cy = (getMarkerPos _marker select 1) + round(random _ry);
 		
 		{
 			_safepos = [[_cx,_cy,0],1,10,1,0,10,0] call BIS_fnc_findSafePos;
