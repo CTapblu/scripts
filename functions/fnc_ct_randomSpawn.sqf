@@ -36,5 +36,5 @@ fnc_ct_randomSpawn = {
 };
 
 [u1,"randomSpawn",100,100] call fnc_ct_randomSpawn;								// телепортируем юнит "u1" относительно маркера "randomSpawn"
-[u2,"randomSpawn",100,-100] call fnc_ct_randomSpawn;							// телепортируем юнит "u1" относительно маркера "randomSpawn
-[u3,"randomSpawn",-100,-100] call fnc_ct_randomSpawn;							// телепортируем юнит "u2" относительно маркера "randomSpawn
+[u2,"randomSpawn",100,-100] call fnc_ct_randomSpawn;							// телепортируем юнит "u1" относительно маркера "randomSpawn"
+[u3,"randomSpawn",-100,-100] call fnc_ct_randomSpawn;							// телепортируем юнит "u2" относительно маркера "randomSpawn"
