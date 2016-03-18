@@ -16,7 +16,7 @@ switch _loadout do {
 		addMagazines("PipeBomb",1);
 		_unit addWeapon (_weapon select 0);
 		addWeapons ["M9","ACE_P159_RD99"];
-		addMagazines("15Rnd_9x19_M9",4);
+		addMagazines("15Rnd_9x19_M9",2);
 		addItems ["R","M","G","M","N"];
 	};
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
