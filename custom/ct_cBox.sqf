@@ -28,7 +28,7 @@ _argID = _this select 3;
 
 // Боеприпасы для Тампеллы
 
-if (_veh == testveh && _argID == 0) then { // Tampella 120mm DM 61 HE
+if (_veh == testveh && _argID == 0) then { // Tampella 120mm DM 61 HE (this addAction ["Выгрузить боеприпасы DM61HE","ct_cBox.sqf",0];)
 		_count = cBoxDM61;
 	
 	if (_count > 0) then {
@@ -50,7 +50,7 @@ if (_veh == testveh && _argID == 0) then { // Tampella 120mm DM 61 HE
 	};
 };
 
-if (_veh == testveh && _argID == 1) then { // Tampella 120mm DM 11 HE
+if (_veh == testveh && _argID == 1) then { // Tampella 120mm DM 11 HE (this addAction ["Выгрузить боеприпасы DM11HE","ct_cBox.sqf",1];)
 		_count = cBoxDM11;
 	
 	if (_count > 0) then {
@@ -72,7 +72,7 @@ if (_veh == testveh && _argID == 1) then { // Tampella 120mm DM 11 HE
 	};
 };
 
-if (_veh == testveh && _argID == 2) then { // Tampella 120mm DM 35 BE HC
+if (_veh == testveh && _argID == 2) then { // Tampella 120mm DM 35 BE HC (this addAction ["Выгрузить боеприпасы DM35HE","ct_cBox.sqf",2];)
 		_count = cBoxDM35;
 	
 	if (_count > 0) then {
@@ -96,7 +96,7 @@ if (_veh == testveh && _argID == 2) then { // Tampella 120mm DM 35 BE HC
 
 // Тампелла
 
-if (_veh == testveh2 && _argID == 0) then { // Tampella Barrel
+if (_veh == testveh2 && _argID == 0) then { // Tampella Barrel (this addAction ["Выгрузить Tampella Barrel","ct_cBox.sqf",0];)
 	
 	_veh removeAction _actID;
 	
@@ -106,7 +106,7 @@ if (_veh == testveh2 && _argID == 0) then { // Tampella Barrel
 	hint format ["Tampella Barrel выгружено!"];
 };
 
-if (_veh == testveh2 && _argID == 1) then { // Tampella Baseplate
+if (_veh == testveh2 && _argID == 1) then { // Tampella Baseplate (this addAction ["Выгрузить Tampella Baseplate","ct_cBox.sqf",1];)
 	
 	_veh removeAction _actID;
 	
@@ -118,7 +118,7 @@ if (_veh == testveh2 && _argID == 1) then { // Tampella Baseplate
 
 // Боеприпасы для Подноса
 
-if (_veh == testveh3 && _argID == 0) then { // Tampella 120mm DM 35 BE HC
+if (_veh == testveh3 && _argID == 0) then { // 2B14 82 mm HE (this addAction ["Выгрузить боеприпасы 82MMHE","ct_cBox.sqf",0];)
 		_count = cBox82HE;
 	
 	if (_count > 0) then {
@@ -141,7 +141,7 @@ if (_veh == testveh3 && _argID == 0) then { // Tampella 120mm DM 35 BE HC
 	};
 };
 
-if (_veh == testveh3 && _argID == 1) then { // Tampella 120mm DM 35 BE HC
+if (_veh == testveh3 && _argID == 1) then { // 2B14 82 mm WP (this addAction ["Выгрузить боеприпасы 82MMWP","ct_cBox.sqf",1];)
 		_count = cBox82WP;
 	
 	if (_count > 0) then {
