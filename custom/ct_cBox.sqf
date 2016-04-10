@@ -39,138 +39,87 @@ if (isServer) then {
 	
 	// Боеприпасы для Тампеллы
 	
-	if (_veh == veh1 && _argID == 0) then { // Tampella 120mm DM 61 HE (this addAction ["Выгрузить боеприпасы DM61HE","ct_cBox.sqf",0];)
-			_count = cBoxDM61;
-		
-		if (_count > 0) then {
+	if (_veh == veh1 && _argID == 0) then {
+		if (cBoxDM61 > 0) then {
 			_veh removeAction _actID;
-			
 			_cargoBox = createVehicle ["ace_arty_120mm_ammo_dm61", position player, [], 0, "NONE"];
 			_cargoBox setVariable ["ace_sys_cargo_name", "Tampella 120mm DM 61 HE", true];
-			
 			cBoxDM61 = cBoxDM61 - 1;
-			_count = cBoxDM61;
-			
-			if (_count > 0) then {
-				hint format ["Ящиков с боеприпасами DM61HE осталось: %1", _count];
+			if (cBoxDM61 > 0) then {
 				sleep 3.123;
-				_veh addAction ["Выгрузить боеприпасы DM61HE","ct_cBox.sqf",0];
-			} else {
-				hint format ["Ящиков с боеприпасами DM61HE не осталось!"];
+				_veh addAction [format ["Выгрузить боеприпасы DM61HE (Осталось: %1)", cBoxDM61],"ct_cBox.sqf",0];
 			};
 		};
 	};
 	
-	if (_veh == veh1 && _argID == 1) then { // Tampella 120mm DM 11 HE (this addAction ["Выгрузить боеприпасы DM11HE","ct_cBox.sqf",1];)
-			_count = cBoxDM11;
-		
-		if (_count > 0) then {
+	if (_veh == veh1 && _argID == 1) then {
+		if (cBoxDM11 > 0) then {
 			_veh removeAction _actID;
-			
 			_cargoBox = createVehicle ["ace_arty_120mm_ammo_dm11", position player, [], 0, "NONE"];
 			_cargoBox setVariable ["ace_sys_cargo_name", "Tampella 120mm DM 11 HE", true];
-			
 			cBoxDM11 = cBoxDM11 - 1;
-			_count = cBoxDM11;
-			
-			if (_count > 0) then {
-				hint format ["Ящиков с боеприпасами DM11HE осталось: %1", _count];
+			if (cBoxDM11 > 0) then {
 				sleep 3.123;
-				_veh addAction ["Выгрузить боеприпасы DM11HE","ct_cBox.sqf",1];
-			} else {
-				hint format ["Ящиков с боеприпасами DM11HE не осталось!"];
+				_veh addAction [format ["Выгрузить боеприпасы DM11HE (Осталось: %1)", cBoxDM11],"ct_cBox.sqf",1];
 			};
 		};
 	};
 	
-	if (_veh == veh1 && _argID == 2) then { // Tampella 120mm DM 35 BE HC (this addAction ["Выгрузить боеприпасы DM35HE","ct_cBox.sqf",2];)
-			_count = cBoxDM35;
-		
-		if (_count > 0) then {
+	if (_veh == veh1 && _argID == 2) then {
+		if (cBoxDM35 > 0) then {
 			_veh removeAction _actID;
-			
 			_cargoBox = createVehicle ["ace_arty_120mm_ammo_dm35", position player, [], 0, "NONE"];
 			_cargoBox setVariable ["ace_sys_cargo_name", "Tampella 120mm DM 35 BE HC", true];
-			
 			cBoxDM35 = cBoxDM35 - 1;
-			_count = cBoxDM35;
-			
-			if (_count > 0) then {
-				hint format ["Ящиков с боеприпасами DM35BEHC осталось: %1", _count];
+			if (cBoxDM35 > 0) then {
 				sleep 3.123;
-				_veh addAction ["Выгрузить боеприпасы DM35BEHC","ct_cBox.sqf",2];
-			} else {
-				hint format ["Ящиков с боеприпасами DM35BEHC не осталось!"];
+				_veh addAction [format ["Выгрузить боеприпасы DM35BEHC (Осталось: %1)", cBoxDM35],"ct_cBox.sqf",2];
 			};
 		};
 	};
 	
 	// Тампелла
 	
-	if (_veh == veh2 && _argID == 0) then { // Tampella Barrel (this addAction ["Выгрузить Tampella Barrel","ct_cBox.sqf",0];)
-		
+	if (_veh == veh2 && _argID == 0) then {
 		_veh removeAction _actID;
-		
 		_cargoBox = createVehicle ["ACE_120Tampella_Barrel", position player, [], 0, "NONE"];
 		_cargoBox setVariable ["ace_sys_cargo_name", "Tampella Barrel", true];
-	
 		hint format ["Tampella Barrel выгружено!"];
 	};
 	
-	if (_veh == veh2 && _argID == 1) then { // Tampella Baseplate (this addAction ["Выгрузить Tampella Baseplate","ct_cBox.sqf",1];)
-		
+	if (_veh == veh2 && _argID == 1) then {
 		_veh removeAction _actID;
-		
 		_cargoBox = createVehicle ["ACE_120Tampella_Baseplate", position player, [], 0, "NONE"];
 		_cargoBox setVariable ["ace_sys_cargo_name", "Tampella Baseplate", true];
-	
 		hint format ["Tampella Baseplate выгружено!"];
 	};
 	
 	// Боеприпасы для Подноса
 	
-	if (_veh == veh3 && _argID == 0) then { // 2B14 82 mm HE (this addAction ["Выгрузить боеприпасы 82MMHE","ct_cBox.sqf",0];)
-			_count = cBox82HE;
-		
-		if (_count > 0) then {
+	if (_veh == veh3 && _argID == 0) then {
+		if (cBox82HE > 0) then {
 			_veh removeAction _actID;
-			
 			_cargoBox = createVehicle ["ACE_Tbox_RU", position player, [], 0, "NONE"];
 			_cargoBox setVariable ["ace_sys_cargo_name", "2B14 82 mm HE", true];
 			_cargoBox addMagazineCargo ["ACE_2B14HE_CSWDM", 10];
-			
 			cBox82HE = cBox82HE - 1;
-			_count = cBox82HE;
-			
-			if (_count > 0) then {
-				hint format ["Ящиков с боеприпасами 82MMHE осталось: %1", _count];
+			if (cBox82HE > 0) then {
 				sleep 3.123;
-				_veh addAction ["Выгрузить боеприпасы 82MMHE","ct_cBox.sqf",0];
-			} else {
-				hint format ["Ящиков с боеприпасами 82MMHE не осталось!"];
+				_veh addAction [format ["Выгрузить боеприпасы 82MMHE (Осталось: %1)", cBox82HE],"ct_cBox.sqf",0];
 			};
 		};
 	};
 	
-	if (_veh == veh3 && _argID == 1) then { // 2B14 82 mm WP (this addAction ["Выгрузить боеприпасы 82MMWP","ct_cBox.sqf",1];)
-			_count = cBox82WP;
-		
-		if (_count > 0) then {
+	if (_veh == veh3 && _argID == 1) then {
+		if (cBox82WP > 0) then {
 			_veh removeAction _actID;
-			
 			_cargoBox = createVehicle ["ACE_Tbox_RU", position player, [], 0, "NONE"];
 			_cargoBox setVariable ["ace_sys_cargo_name", "2B14 82 mm WP", true];
 			_cargoBox addMagazineCargo ["ACE_2B14WP_CSWDM", 10];
-			
 			cBox82WP = cBox82WP - 1;
-			_count = cBox82WP;
-			
-			if (_count > 0) then {
-				hint format ["Ящиков с боеприпасами 82MMWP осталось: %1", _count];
+			if (cBox82WP > 0) then {
 				sleep 3.123;
-				_veh addAction ["Выгрузить боеприпасы 82MMWP","ct_cBox.sqf",1];
-			} else {
-				hint format ["Ящиков с боеприпасами 82MMWP не осталось!"];
+				_veh addAction [format ["Выгрузить боеприпасы 82MMWP (Осталось: %1)", cBox82WP],"ct_cBox.sqf",1];
 			};
 		};
 	};
